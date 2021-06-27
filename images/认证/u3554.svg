@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="140px" height="140px" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="325" y1="710" x2="425" y2="710" id="LinearGradient101">
+      <stop id="Stop102" stop-color="#ffec82" offset="0" />
+      <stop id="Stop103" stop-color="#ffd130" offset="1" />
+    </linearGradient>
+    <filter x="300px" y="645px" width="140px" height="140px" filterUnits="userSpaceOnUse" id="filter104">
+      <feOffset dx="-5" dy="5" in="SourceAlpha" result="shadowOffsetInner" />
+      <feGaussianBlur stdDeviation="10" in="shadowOffsetInner" result="shadowGaussian" />
+      <feComposite in2="shadowGaussian" operator="atop" in="SourceAlpha" result="shadowComposite" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.333333333333333  0 0 0 0 0.333333333333333  0 0 0 0 0.333333333333333  0 0 0 0.349019607843137 0  " in="shadowComposite" />
+    </filter>
+    <g id="widget105">
+      <path d="M 375 679  C 392.36 679  406 692.64  406 710  C 406 727.36  392.36 741  375 741  C 357.64 741  344 727.36  344 710  C 344 692.64  357.64 679  375 679  Z " fill-rule="nonzero" fill="#f59a23" stroke="none" />
+      <path d="M 375 670  C 397.4 670  415 687.6  415 710  C 415 732.4  397.4 750  375 750  C 352.6 750  335 732.4  335 710  C 335 687.6  352.6 670  375 670  Z " stroke-width="20" stroke="url(#LinearGradient101)" fill="none" />
+    </g>
+  </defs>
+  <g transform="matrix(1 0 0 1 -300 -645 )">
+    <use xlink:href="#widget105" filter="url(#filter104)" />
+    <use xlink:href="#widget105" />
+  </g>
+</svg>
